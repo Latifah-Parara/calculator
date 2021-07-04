@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <title>Simple calculator ~</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="calculator-body">
+            <div id="calculator-display">
+                <input id="userInput" type="text" readonly/>
+                <input id="output" type="text" readonly/>
+            </div>
+            <div id="calculator-buttons">
+                <div onclick="del()">DEL</div>
+                <div onclick="allClear()">AC</div>
+                <div onclick="doIt(event)">7</div>
+                <div onclick="doIt(event)">8</div>
+                <div onclick="doIt(event)">9</div>
+                <div onclick="doIt(event)">+</div>
+                <div onclick="doIt(event)">4</div>
+                <div onclick="doIt(event)">5</div>
+                <div onclick="doIt(event)">6</div>
+                <div onclick="doIt(event)">-</div>
+                <div onclick="doIt(event)">1</div>
+                <div onclick="doIt(event)">2</div>
+                <div onclick="doIt(event)">3</div>
+                <div onclick="doIt(event)">x</div>
+                <div onclick="doIt(event)">.</div>
+                <div onclick="doIt(event)">0</div>
+                <div onclick="calculate()">=</div>
+                <div onclick="doIt(event)">÷</div>
+                <div onclick="rainbowMode()">
+                    <img id="rainbow" src="rainbow-svgrepo-com.svg"/>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
