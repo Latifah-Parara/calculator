@@ -1,6 +1,6 @@
 /* 
 TODO: 
-    - Make rainbow mode work
+    - Make rainbow mode work DONE
     - When there's only a number and an operand, and you press =,
     ensure that the answer still evaluates.
     - Fix button layout
@@ -40,5 +40,5 @@ function calculate() {
 }
 
 function rainbowMode() {
-    console.log('lol');
+    document.getElementById('calculator-body').classList.toggle('rainbow-bg');
 }

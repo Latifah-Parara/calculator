@@ -26,6 +26,7 @@ body {
     grid-row-gap: 10%;
     margin: 10px 30px 20px 30px;
 }
+
 #calculator-buttons div {
     align-items: center;
     background-color: beige;
@@ -74,6 +75,26 @@ input:read-only {
 
 #rainbow {
     padding: 3px;
+}
+
+.rainbow-bg {
+    background-image: linear-gradient(110deg, #ef476f,
+    #FCD34D, #06d6a0,
+    /* top left @ 0%, off screen @ 100% */
+    #2563EB, #ef476f,
+    /* center @ 0%, top left @ 100%*/
+    #FCD34D, #06d6a0,
+    /* bottom right @ 0%, center @ 100%*/
+    #2563EB, #ef476f, #FCD34D, #06d6a0
+    /* off screen @ 0%, bottom right @ 100%*/
+    );
+    background-size: 200%;
+    animation: rainbow-dash 1s linear infinite;
+}
+
+@keyframes rainbow-dash {
+    0% {background-position: top left}
+    100% {background-position: bottom right;}
 }
 
 #userInput {
